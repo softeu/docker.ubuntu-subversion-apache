@@ -27,8 +27,6 @@ RUN mkdir -p /var/svn
 #VOLUME ["/var/www/html", "/var/log/apache2", "/var/svn" ]
 
 ENV SERVERNAME "docker-subversion"
-ENV LDAP_HOST "localhost"
-ENV LDAP_PORT "389"
 
 # for main web interface:
 EXPOSE 80
