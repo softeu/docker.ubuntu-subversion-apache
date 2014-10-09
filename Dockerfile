@@ -17,14 +17,14 @@ COPY run_apache.sh /var/www/
 RUN a2enmod rewrite cgi headers ldap authnz_ldap
 
 
-volume "/var/log"
+#volume "/var/log"
 
 
 
 
 RUN mkdir -p /var/svn
 
-VOLUME ["/var/www/html", "/var/log/apache2", "/var/svn" ]
+#VOLUME ["/var/www/html", "/var/log/apache2", "/var/svn" ]
 
 ENV SERVERNAME "docker-subversion"
 ENV LDAP_HOST "localhost"
